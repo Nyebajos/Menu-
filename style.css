@@ -1,0 +1,249 @@
+/* Style général */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom right, #2c3e50, #34495e);
+    /* Couleur de type et commandes et prix total*/
+    color: #000000;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/j.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px);
+    z-index: -1;
+}
+
+
+/* couleur du titre */
+
+h1 {
+    text-align: center;
+    color: #bd0707;
+    margin-top: 30px;
+}
+
+
+/* Ligne de séparation */
+
+hr {
+    border: 1px solid #bd0707;
+    margin: 20px auto;
+    width: 80%;
+}
+
+
+/* Style des cartes */
+
+.carte {
+    background-color: rgba(255, 255, 255, 0.05);
+    /* fond transparent doux */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+
+/* Images des plats */
+
+.carte img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+
+/* Titres des cartes */
+
+.carte h3 {
+    color: #2bbd6d;
+    margin-bottom: 10px;
+}
+
+
+/* Label et select */
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+select {
+    padding: 8px;
+    border-radius: 4px;
+    border: none;
+    background-color: #ecf0f1;
+    /* couleur du texte dans la roulette */
+    color: #000000;
+    width: 80%;
+    max-width: 300px;
+}
+
+
+/* Bouton Ajouter */
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #1abc9c;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #0ab9ee;
+}
+#annule{
+    background-color: #3498db;
+    color: #ecf0f1;
+    border: none;
+}
+
+
+/* Zone de commande */
+
+#CommandeListe {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+#CommandeListe li {
+    padding: 5px;
+    border-bottom: 1px solid #111111;
+    text-align: left;
+}
+#checkmark::after{
+    content:'''';
+    display:none;
+    position:absolute;
+    left:6px;
+    top:2px;
+    width:5px;
+    height: 10px;
+    border:solid white;
+    border-width:0 2px 2px 0;
+    transform: rotate(45deg);
+}
+#checkbox-container input:checked-.checkmark:after{
+    display:block;
+}
+#buttons{
+    margin-top:15px;
+}
+button{
+    padding:8px 16px;
+    margin-right: 10px;
+}
+#totalPrix {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+
+/* Message de fin */
+
+.message {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    background-color: rgba(255, 255, 255, 0.08);
+    border-top: 1px solid #7f8c8d;
+    font-style: italic;
+}
+
+.message img {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+
+/* Responsive */
+
+@media (max-width: 600px) {
+    .carte {
+        width: 90%;
+    }
+    select {
+        width: 100%;
+    }
+}
+
+.message {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    background-color: rgba(255, 255, 255, 0.1);
+    /* fond légèrement transparent */
+    border-top: 1px solid #7f8c8d;
+    font-style: italic;
+    /* texte en jaune doré */
+    color: #f00808fa;
+    font-size: 1.2em;
+}
+
+.message img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 10px;
+    border: 1px solid #f1c40f;
+}
+
+.logo-header {
+    display: flex;
+    justify-content: flex-end;
+    /* aligne à droite */
+    padding: 20px 40px 0 0;
+}
+
+.logo-header img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    /* rend le logo rond */
+    object-fit: cover;
+    border: 2px solid #630202;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.carte img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    /* rend l'image ronde */
+    object-fit: cover;
+    border: 2px solid #1abc9c;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    /* garde le bon cadrage */
+}
+
+body {
+    /* Arrière plan de la page */
+    background-image: url("images/j.JPG");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /*facultatif,pour rendre le texte plus lusible */
+}

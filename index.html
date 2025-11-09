@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENU LE GOURMET</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="logo-header">
+        <img src="images/logo.jpg" alt="Logo du restaurant">
+    </div>
+
+    <center>
+        <h1>Menu du restaurant le gourmet </h1>
+    </center>
+    <hr>
+    <center>
+        <div class="carte">
+            <img src="images/SANDWICHES.jpg" alt="SANDWICHES">
+            <h3>SANDWICHES</h3>
+            <label>Types</label>
+            <select name="types" id="types-SANDWICHES">
+                <option value="Chawarma -3">Chawarma 3$</option>
+                <option value="Spicy chicken-4">Spicy chicken  4$</option>
+                <option value="Steak-4">Steak  4$</option>
+                <option value="Philadephia-4">Philadephia  4$</option>
+                <option value="chicken grill-5">chicken grill  5$</option>
+                <option value="Fahita chicken-5">Fahita chicken  5$</option>
+            </select>
+            <br>
+            <button onclick="ajouterCommandeDepuisSelect('SANDWICHES','types-SANDWICHES')">Ajouter</button></center>
+
+    </div>
+    <div class="carte">
+        <center>
+            <img src="images/BOURGERS.jpg" alt="BOURGERS">
+            <h3>BURGERS</h3>
+            <label>Types</label>
+            <select name="types" id="types-BURGERS">
+                <option value="Beef-4">Beef  4$</option>
+                <option value="Chicken-4">Chicken  4$</option>
+                <option value="Double Beef-8">Double Beef  8$</option>
+                <option value="Cheese Burger-5">Cheese Burger  5$</option>
+                <option value="Vegetatarian-4">Vegetatarian  4$</option>
+            </select>
+            <br>
+            <button onclick="ajouterCommandeDepuisSelect('BURGERS','types-BURGERS')">Ajouter</button></center>
+
+    </div>
+    <center>
+        <div class="carte">
+            <img src="images/SALADES.jpg" alt="SALADES">
+            <h3>SALADES</h3>
+            <label>Types</label>
+            <select name="types" id="types-SALADES">
+                <option value="Salade grecque-4">Salade grecque  4$</option>
+                <option value="Salade mayo aux choux-3">Salade mayo aux choux  3$</option>
+                <option value="Salade au-5">Salade au poulet  5$</option>
+                <option value="Tuna salade-4">Tuna salade  4$ </option>
+                <option value="Salade fatouche-4">Salade fatouche  4$</option>
+                <option value="Green salade-3">Green salade  3$</option>
+            </select>
+            <br>
+            <button onclick="ajouterCommandeDepuisSelect('SALADES','types-SALADES')">Ajouter</button></center>
+
+    <center>
+        <div class="carte">
+            <img src="images/PIZZAS.jpg" alt="PIZZAS">
+            <h3>PIZZAS</h3>
+            <label>Types</label>
+            <select name="types" id="types-PIZZAS">
+            <option value="Margherita-6">Margherita  6$</option>
+            <option value="Végétarien-6">Végétarien  6$</option>
+            <option value="Salami-8">Salami  8$</option>
+            <option value="Salami-8">Au Saucisson  8$</option>
+            <option value="Poulet-8">Poulet  8$</option>
+            <option value="Gourmet-10">Gourmet  10$</option>
+        </select>
+            <br>
+            <button onclick="ajouterCommandeDepuisSelect('PIZZAS','types-PIZZAS')">Ajouter</button></center>
+
+    <center>
+        <div class="carte">
+            <img src="images/GOURMET.jpg" alt="GOURMET">
+            <h3>GOURMET</h3>
+            <label>Types</label>
+            <select name="types" id="types-GOURMET">
+                <option value="Steak de boeuf-5">Steak de boeuf  5$</option>
+                <option value="Poulet entier-18">Poulet entier  18$</option>
+                <option value="1/2 Poulet-10">1/2 Poulet  10$</option>
+                <option value="1/4 Poulet-6">1/4 Poulet  6$</option>
+                <option value="Tawook-4">Tawook  4$</option>
+                <option value="Déjeuner complet-5">Déjeuner complet  5$</option>
+                <option value="Déjeuner simple-3">Déjeuner simple  3$</option>
+                <option value="Filet de capitaine-8">Filet de capitaine  8$</option>
+                <option value="Boulettes-4">Boulettes (5 pièces) 4$</option>
+                <option value="Samosas-4">Samosas(6 pièces)  4$</option>
+            </select>
+            <br>
+            <button onclick="ajouterCommandeDepuisSelect('GOURMET','types-GOURMET')">Ajouter</button></center>
+
+    </div>
+    <div class="carte">
+        <h4>Commande passée :</h4>
+        <ul id="CommandeListe"></ul>
+        <!--Liste des elements-->
+        <div id="totalPrix">Total: 0 $ </div>
+
+    </div>
+    <br>
+    <center>
+        <div class="card">
+            <div class="card-body">
+                <button onclick="window.location.href='confirmation.html'" class="btn-primary">Validation de la commande</button></center>
+    </div>
+
+    <div class="message">
+        <p><img src="images/logo.jpg" alt="logo">Le gourmet vous souhaite une très bonne dégustation de votre plat.</p>
+    </div>
+
+    </div>
+
+    <br>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
