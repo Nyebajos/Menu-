@@ -16,10 +16,16 @@
         <img src="images/logo.jpg" alt="Logo du restaurant">
     </div>
 
+    <div style="text-align:center; margin-top: 10px;">
+        <button id="btn-user" onclick="showUserView()">Utilisateur</button>
+        <button id="btn-admin" onclick="adminLogin()">Admin</button>
+    </div>
+
     <center>
         <h1>Menu du restaurant le gourmet </h1>
     </center>
     <hr>
+    <div id="user-view">
     <center>
         <div class="carte">
             <img src="images/SANDWICHES.jpg" alt="SANDWICHES">
@@ -34,7 +40,7 @@
                 <option value="Fahita chicken-5">Fahita chicken  5$</option>
             </select>
             <br>
-            <button onclick="ajouterCommandeDepuisSelect('SANDWICHES','types-SANDWICHES')">Ajouter</button></center>
+        <button onclick="ajouterCommandeDepuisSelect('SANDWICHES','types-SANDWICHES')">Ajouter</button></center>
 
     </div>
     <div class="carte">
@@ -50,7 +56,7 @@
                 <option value="Vegetatarian-4">Vegetatarian  4$</option>
             </select>
             <br>
-            <button onclick="ajouterCommandeDepuisSelect('BURGERS','types-BURGERS')">Ajouter</button></center>
+        <button onclick="ajouterCommandeDepuisSelect('BURGERS','types-BURGERS')">Ajouter</button></center>
 
     </div>
     <center>
@@ -113,17 +119,41 @@
         <div id="totalPrix">Total: 0 $ </div>
 
     </div>
+
     <br>
     <center>
         <div class="card">
             <div class="card-body">
-                <button onclick="window.location.href='confirmation.html'" class="btn-primary">Validation de la commande</button></center>
-    </div>
+                <button onclick="validerCommande()" class="btn-primary">Validation de la commande</button>
+            </div>
+        </div>
+    </center>
 
     <div class="message">
         <p><img src="images/logo.jpg" alt="logo">Le gourmet vous souhaite une très bonne dégustation de votre plat.</p>
     </div>
 
+    </div> <!-- fin user-view -->
+
+    <!-- Vue Admin (cachée tant que l'admin n'est pas connecté) -->
+    <div id="admin-view" style="display:none;">
+        <center>
+            <h2>Interface Admin</h2>
+        </center>
+        <div class="carte">
+            <h4>Commandes reçues :</h4>
+            <ul id="adminCommandeListe"></ul>
+            <div id="adminTotal">Total: 0 $</div>
+            <div id="buttons" style="margin-top:10px;">
+                <button onclick="clearOrders()">Vider les commandes</button>
+                <button onclick="showUserView()">Retour Utilisateur</button>
+            </div>
+        </div>
+    </div>
+    <br>
+    <center>
+        <div class="card">
+           
     </div>
 
     <br>
