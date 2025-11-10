@@ -1,3 +1,59 @@
+/* Boutons Admin/User */
+#btn-user, #btn-admin {
+    padding: 8px 16px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#btn-user {
+    background-color: #2ecc71;
+    color: white;
+}
+
+#btn-admin {
+    background-color: #e74c3c;
+    color: white;
+}
+
+#btn-user:disabled, #btn-admin:disabled {
+    background-color: #95a5a6;
+    cursor: not-allowed;
+}
+
+/* Styles pour la vue admin */
+.order-entry {
+    margin: 15px 0;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+.order-entry h4 {
+    color: #e74c3c;
+    margin: 0 0 10px 0;
+}
+
+.order-entry .order-total {
+    font-weight: bold;
+    color: #2ecc71;
+    margin-top: 5px;
+}
+
+.order-entry hr {
+    border-color: rgba(255, 255, 255, 0.2);
+    margin: 10px 0;
+}
+
+#adminTotal {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #3498db;
+}
+
 /* Style général */
 
 body {
